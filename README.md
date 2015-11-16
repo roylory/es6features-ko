@@ -21,7 +21,7 @@ ES6의 새로운 기능:
 - [모듈](#모듈)
 - [모듈 로더](#모듈-로더)
 - [자료 구조 객체](#자료-구조-객체)
-- [프록시](#프록시)
+- [프락시](#프락시)
 - [심볼](#심볼)
 - [확장 가능한 내장 객체](#확장-가능한-내장-객체)
 - [약속 객체](#약속-객체)
@@ -426,12 +426,12 @@ ws.add({ data: 42 });
 // 추가된 객체가 어디에서도 참조되지 않기 때문에 WeakSet에 추가되지 않는다
 ```
 
-### 프록시
-프록시(proxy)는 임의의 객체에 가능한 모든 기능을 가로채서 작동하는 다른 객체를 생성해준다.
-프록시는 인터셉션(interception), 객체 가상화, 로깅/프로파일링 등에 유용하다.
+### 프락시
+프락시(proxy)는 임의의 객체에 가능한 모든 기능을 가로채서 작동하는 다른 객체를 생성해준다.
+프락시는 인터셉션(interception), 객체 가상화, 로깅/프로파일링 등에 유용하다.
 
 ```JavaScript
-// 일반 객체의 프록시
+// 일반 객체의 프락시
 var target = {};
 var handler = {
   get: function (receiver, name) {
@@ -444,7 +444,7 @@ p.world === 'Hello, world!';
 ```
 
 ```JavaScript
-// 함수 객체의 프록시
+// 함수 객체의 프락시
 var target = function () { return 'I am the target'; };
 var handler = {
   apply: function (receiver, ...args) {
@@ -456,7 +456,7 @@ var p = new Proxy(target, handler);
 p() === 'I am the proxy';
 ```
 
-프록시 트랩(프로퍼티 접근 메서드) 목록:
+프락시 트랩(프로퍼티 접근 메서드) 목록:
 
 ```JavaScript
 var handler =
@@ -600,8 +600,8 @@ var p = timeout(1000).then(() => {
 
 ### 리플렉트 API
 리플렉트(reflect) API를 이용하면 런타임 환경에서 객체의 모든 meta-operation을 행할 수 있다.
-리플렉트 API는 프록시 트랩과 정확히 일치하는 정적 메서드 목록을 지원한다.
-그래서 프록시를 구현하는데 매우 유용하다.
+리플렉트 API는 프락시 트랩과 정확히 일치하는 정적 메서드 목록을 지원한다.
+그래서 프락시를 구현하는데 매우 유용하다.
 
 ```JavaScript
 // No sample yet
