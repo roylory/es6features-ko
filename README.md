@@ -61,6 +61,8 @@ var bob = {
 }
 ```
 
+더 많은 정보: [MDN Arrow Functions](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+
 ### 클래스
 ES6 클래스는 프로토타입 기반의 OO 패턴과 큰 차이가 없다.
 다만 클래스를 이용하여 단 한 번만 선언함으로써 사용하기 편하고 상호 운용에 유리하다.
@@ -92,6 +94,8 @@ class SkinnedMesh extends THREE.Mesh {
 }
 ```
 
+더 많은 정보: [MDN Classes](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes)
+
 ### 객체 리터럴의 진화
 객체 리터럴은 다음과 같은 기능들이 추가됐다.
 - 객체 생성 시 프로토타입 설정 가능
@@ -118,6 +122,8 @@ var obj = {
 };
 ```
 
+더 많은 정보: [MDN Grammar and types: Object literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Object_literals)
+
 ### 템플릿 문자열
 템플릿 문자열(template string)은 문자열을 쉽게 다루도록 도와주는 새로운 문법이다.
 Perl이나 Python 등의 언어에서 문자열 내삽(string interpolation) 기능과 비슷하다.
@@ -142,6 +148,8 @@ POST`http://foo.org/bar?a=${a}&b=${b}
      { "foo": ${foo},
        "bar": ${bar}}`(myOnReadyStateChangeHandler);
 ```
+
+더 많은 정보: [MDN Template Strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings)
 
 ### 디스트럭쳐링
 디스트럭쳐링(destructuring)은 여러 변수에 값을 할당할 때 배열이나 객체의 패턴으로 손쉽게 바인딩해주는 것을 말한다.
@@ -173,8 +181,9 @@ var [a = 1] = [];
 a === 1;
 ```
 
-### 매개변수
+더 많은 정보: [MDN Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
+### 매개변수
 ES6에서는 매개변수와 관련하여 다음과 같은 새로운 기능들이 추가됐다.
 - 호출되는 함수는 매개변수의 기본값을 가질 수 있다.
 - `...`을 쓰면 배열의 각 값을 손쉽게 인자로 넘길 수 있다.
@@ -202,6 +211,8 @@ function f(x, y, z) {
 f(...[1,2,3]) == 6
 ```
 
+더 많은 정보: [Default parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters), [Rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters), [Spread Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator)
+
 ### 블록 영역 변수
 `let`과 `const`는 블록 영역 변수를 선언하는 새로운 키워드다.
 `let`은 새로운 `var`라고 생각하면 되고,
@@ -223,6 +234,8 @@ function f() {
   }
 }
 ```
+
+더 많은 정보: [let statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let), [const statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
 
 ### 반복자
 반복자(iterator) 객체는 .NET의 IEnumerable이나 Java의 Iterable과 비슷하다.
@@ -265,6 +278,8 @@ interface Iterable {
 }
 ```
 
+더 많은 정보: [MDN for...of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
+
 ### 제너레이터
 제너레이터(generator)는 `function*`과 `yield`를 사용해서 반복자 사용을 간편하게 한다.
 `function*`로 선언된 함수는 제너레이터 인스턴스를 반환한다.
@@ -303,6 +318,8 @@ interface Generator extends Iterator {
 }
 ```
 
+더 많은 정보: [MDN Iteration protocols](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols)
+
 ### 유니코드
 유니코드와 관련하여 다음과 같은 새로운 기능들이 추가됐다.
 - 모든 유니코드 지원
@@ -330,6 +347,8 @@ for(var c of "𠮷") {
   console.log(c);
 }
 ```
+
+더 많은 정보: [MDN RegExp.prototype.unicode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode)
 
 ### 모듈
 ES6는 프로그래밍 언어 차원에서 컴포넌트를 정의하는 모듈을 지원한다.
@@ -370,6 +389,8 @@ export default function(x) {
 import ln, {pi, e} from "lib/mathplusplus";
 alert("2π = " + ln(e)*pi*2);
 ```
+
+더 많은 정보: [import statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import), [export statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
 
 ### 모듈 로더
 모듈 로더(module loader)는 다음을 지원한다:
@@ -426,6 +447,8 @@ ws.add({ data: 42 });
 // 추가된 객체가 어디에서도 참조되지 않기 때문에 WeakSet에 추가되지 않는다
 ```
 
+더 많은 정보: [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map), [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set), [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap), [WeakSet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)
+
 ### 프락시
 프락시(proxy)는 임의의 객체에 가능한 모든 기능을 가로채서 작동하는 다른 객체를 생성해준다.
 프락시는 인터셉션(interception), 객체 가상화, 로깅/프로파일링 등에 유용하다.
@@ -478,6 +501,8 @@ var handler =
 }
 ```
 
+더 많은 정보: [MDN Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)
+
 ### 심볼
 심볼은 객체 상태(object state)의 접근 제어(access control)를 가능하게 해준다.
 ES6에서는 객체 리터럴에서 `symbol`을 키(key)로 사용할 수 있다. 물론 `string`을 써도 된다.
@@ -506,6 +531,8 @@ var MyClass = (function() {
 var c = new MyClass("hello")
 c["key"] === undefined
 ```
+
+더 많은 정보: [MDN Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
 
 ### 확장 가능한 내장 객체
 ES6에서는 `Array`, `Date`, 그리고 DOM `Element` 같은 내장 객체가 서브클래스로 확장 가능하다.
@@ -569,6 +596,8 @@ Array.of(1, 2, 3) // 인자가 하나일 때만 제외하고 new Array(...)와 �
 Object.assign(Point, { origin: new Point(0,0) })
 ```
 
+더 많은 정보: [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number), [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math), [Array.from](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from), [Array.of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of), [Array.prototype.copyWithin](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin), [Object.assign](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+
 ### 2진법과 8진법 표기
 ES6에서는 정수를 `b`(2진법)이나 `o`(8진법)으로 표기할 수 있다.
 
@@ -598,6 +627,8 @@ var p = timeout(1000).then(() => {
 })
 ```
 
+더 많은 정보: [MDN Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+
 ### 리플렉트 API
 리플렉트(reflect) API를 이용하면 런타임 환경에서 객체의 모든 meta-operation을 행할 수 있다.
 리플렉트 API는 프락시 트랩과 정확히 일치하는 정적 메서드 목록을 지원한다.
@@ -606,6 +637,8 @@ var p = timeout(1000).then(() => {
 ```JavaScript
 // No sample yet
 ```
+
+더 많은 정보: [MDN Reflect](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect)
 
 ### 테일 콜
 테일 콜(tail call), 즉 `return` 구문에서 호출되는 함수는 더 이상 스택(stack)에 쌓이지 않는다.
