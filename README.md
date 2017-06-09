@@ -1,5 +1,7 @@
 # ECMAScript 6에 대해 알아보자 ([원문](http://git.io/es6features))
 
+[![Flattr Button](http://api.flattr.com/button/flattr-badge-large.png "번역이 마음에 드시면 기부 부탁드립니다!")](https://flattr.com/submit/auto?user_id=knq7q1&url=https://github.com/roylory/typescript-book-ko&title=typescript-book-ko&language=&tags=&category=)
+
 ## 소개
 ECMAScript 6의 공식적인 이름은 ECMAScript 2015이며, 현재 최신 버전의 ECMAScript이다. 흔히 줄여서 ES6라고 쓴다.
 ES6는 ES5가 2009년에 표준화된 이후 처음 업데이트된 것인데 매우 많은 변화가 있었다.
